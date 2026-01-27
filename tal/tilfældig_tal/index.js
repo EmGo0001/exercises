@@ -1,0 +1,1 @@
+console.log("Random", Math.floor(Math.random()*10));
