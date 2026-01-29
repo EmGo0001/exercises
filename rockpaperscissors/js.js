@@ -37,6 +37,7 @@ function paperClick(){
     player1.classList.add("paper");
     computerChooses()
 }
+
 function scisssorsClick(){
     player1.setAttribute("class", "player")
     player2.setAttribute("class", "player")
