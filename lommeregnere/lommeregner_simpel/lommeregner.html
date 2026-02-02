@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="lommeregner.js" defer></script>
+    <link rel="stylesheet" href="lommeregner.css" />
+    <title>Lommeregner</title>
+  </head>
+  <body>
+    <h1>Lommeregner simpel</h1>
+    <div>
+      <label for="input1"> Første tal </label>
+      <input id="input1" type="number" />
+    </div>
+    <div>
+      <label for="regneart">Vælg regneart</label>
+      <select id="regneart">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+    </div>
+    <div>
+      <label for="input2"> Andet tal </label>
+      <input id="input2" type="number" />
+    </div>
+    <button id="beregn">Beregn regnestykke</button>
+    <div>
+      <label for="resultatInput">Resultat</label>
+      <input id="resultatInput" />
+    </div>
+  </body>
+</html>

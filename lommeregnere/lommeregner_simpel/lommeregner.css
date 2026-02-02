@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 250px;
+    background-color: rgba(249, 226, 204, 0.718);
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+}
+
+input[type=number] {
+    padding: 10px;
+    font-size: 20px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#regneart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
