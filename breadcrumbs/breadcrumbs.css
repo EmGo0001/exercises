@@ -1,3 +1,13 @@
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(249, 226, 204, 0.718);
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -14,4 +24,29 @@ li:first-child {
 
 p {
     margin: 0;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 6px;
+    font-size: 14px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #e19090;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+#breadcrumbs {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }

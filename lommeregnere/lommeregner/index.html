@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Lommeregner (HTML + CSS)</title>
+    <title>lommeregner</title>
     <link rel="stylesheet" href="style.css" />
 
     <script type="module" src="index.js"></script>
@@ -14,7 +14,14 @@
         <p class="calc__title">Lommeregner</p>
 
         <!-- Kun UI: JS kan senere skrive til value -->
-        <input class="display" type="text" inputmode="decimal" value="0" aria-label="Display" readonly />
+        <input
+          class="display"
+          type="text"
+          inputmode="decimal"
+          value="0"
+          aria-label="Display"
+          readonly
+        />
 
         <div class="hint" aria-hidden="true">
           <span>HTML + CSS</span>
@@ -24,8 +31,12 @@
 
       <section class="keys" aria-label="Taster">
         <button class="key key--danger" type="button" data-func="ac">AC</button>
-        <button class="key key--danger" type="button" data-func="del" disabled>DEL</button>
-        <button class="key key--op" type="button" data-func="percent" disabled>%</button>
+        <button class="key key--danger" type="button" data-func="del" disabled>
+          DEL
+        </button>
+        <button class="key key--op" type="button" data-func="percent" disabled>
+          %
+        </button>
         <button class="key key--op" type="button" data-func="/">÷</button>
 
         <button class="key" type="button" data-func="7">7</button>

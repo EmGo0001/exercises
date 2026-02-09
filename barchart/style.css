@@ -23,5 +23,9 @@ body {
     font-family: system-ui;
     line-height: 1.5;
     margin: 0;
-    padding: 2rlh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(249, 226, 204, 0.718);
 }

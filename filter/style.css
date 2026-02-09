@@ -1,40 +1,114 @@
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background-color: rgba(249, 226, 204, 0.718);
+    padding: 40px;
 }
 
+/* TABLE */
+table {
+    border-collapse: collapse;
+    margin: auto;
+    min-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    /* gør rounded corners pæne */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* CAPTION */
 caption {
     caption-side: bottom;
-    padding: 10px;
+    padding: 12px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* HEADER + FOOTER */
+thead {
+    background-color: #f4b183;
+    color: #fff;
+}
+
+tfoot {
+    background-color: #fde6d2;
     font-weight: bold;
 }
 
-thead,
-tfoot {
-    background-color: rgb(228 240 245);
-}
-
+/* CELLS */
 th,
 td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
+    padding: 12px 16px;
+    text-align: left;
 }
 
-td:last-of-type {
+/* CENTER LAST COLUMN */
+td:last-of-type,
+th:last-of-type {
     text-align: center;
 }
 
-tbody>tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
+/* ROW STRIPES */
+tbody tr:nth-child(even) {
+    background-color: #fafafa;
 }
 
+/* HOVER EFFECT */
+tbody tr:hover {
+    background-color: #fff1e6;
+    transition: background-color 0.2s ease;
+}
+
+/* FOOTER ALIGNMENT */
 tfoot th {
     text-align: right;
 }
 
-tfoot td {
-    font-weight: bold;
+/* FÆLLES STYLING */
+.filter1,
+.filter2,
+.filter3,
+.filter4,
+.filter5 {
+    padding: 10px 18px;
+    margin: 6px;
+    font-size: 14px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+/* HOVER */
+.filter1:hover,
+.filter2:hover,
+.filter3:hover,
+.filter4:hover,
+.filter5:hover {
+    background-color: #f4b183;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ACTIVE (klik-effekt) */
+.filter1:active,
+.filter2:active,
+.filter3:active,
+.filter4:active,
+.filter5:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
 }

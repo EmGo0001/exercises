@@ -1,0 +1,64 @@
+/* LIGHT MODE */
+[data-theme="light"] {
+    ---header-bg-col: rgba(252, 242, 226, 1);
+    ---main-bg-col: rgba(255, 221, 167, 0.852);
+    ---footer-bg-col: rgb(255, 229, 198);
+    ---font-col: black;
+}
+
+/* DARK MODE */
+[data-theme="dark"] {
+    ---header-bg-col: rgb(74, 74, 74);
+    ---main-bg-col: rgb(129, 129, 129);
+    ---footer-bg-col: rgb(74, 74, 74);
+    ---font-col: white;
+}
+
+/* HAWAII */
+[data-theme="hawaii"] {
+    ---header-bg-col: rgba(170, 193, 108, 1);
+    ---main-bg-col: rgba(51, 169, 193, 1);
+    ---footer-bg-col: rgba(226, 135, 167, 1);
+    ---font-col: black;
+}
+
+
+header {
+    background-color: var(---header-bg-col);
+    color: var(---font-col);
+}
+
+main {
+    background-color: var(---main-bg-col);
+    color: var(---font-col);
+}
+
+footer {
+    background-color: var(---footer-bg-col);
+    color: var(---font-col);
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin: 0;
+    height: 10vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    padding: 20px 100px;
+    height: 60vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    margin: 0;
+    padding: 20px 100px;
+    height: 15vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
